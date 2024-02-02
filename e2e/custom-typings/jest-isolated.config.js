@@ -2,12 +2,13 @@ const baseCfg = require('./jest.config');
 
 module.exports = {
   ...baseCfg,
-  transform: {
-    '^.+\\.(ts|js|html)$': [
-      '<rootDir>/../../build/index.js',
-      {
-        isolatedModules: true,
-      },
-    ],
+  transform : {
+    '^.+\\.(ts|js|html)$' :
+                          [
+                            '<rootDir>/../../build-bundled/index.js',
+                            {
+                              isolatedModules : true,
+                            },
+                          ],
   },
 };

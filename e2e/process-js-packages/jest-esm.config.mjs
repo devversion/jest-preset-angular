@@ -1,14 +1,18 @@
 export default {
-  extensionsToTreatAsEsm: [".ts"],
+  extensionsToTreatAsEsm: ['.ts'],
   transform: {
-    "^.+\\.(ts|js)$": ["<rootDir>/../../build/index.js", {
-      tsconfig: "tsconfig-esm.spec.json",
-      useESM: true,
-      isolatedModules: true,
-    }],
+    '^.+\\.(ts|js)$':
+        [
+          '<rootDir>/../../build-bundled/index.js', {
+            tsconfig: 'tsconfig-esm.spec.json',
+            useESM: true,
+            isolatedModules: true,
+          }
+        ],
   },
   moduleNameMapper: {
-    '@googlemaps/markerclusterer': '@googlemaps/markerclusterer/dist/index.esm.js',
+    '@googlemaps/markerclusterer':
+        '@googlemaps/markerclusterer/dist/index.esm.js',
   },
   transformIgnorePatterns: ['node_modules/(?!@googlemaps/markerclusterer)'],
 };

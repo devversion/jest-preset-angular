@@ -12,4 +12,4 @@ const ngJestResolver: SyncResolver = (path, options) => {
   });
 };
 
-export = ngJestResolver;
+module.exports = ngJestResolver;

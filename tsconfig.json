@@ -12,10 +12,10 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "moduleResolution": "Node",
-    "target": "ES2015",
-    "module": "CommonJS",
+    "target": "ESNext",
+    "module": "ESNext",
     "lib": ["esnext", "dom"],
-    "types": ["node", "jest"]
+    "types": ["node", "jest"],
   },
-  "files": ["src/global.d.ts"]
+  "files": ["src/global.d.ts"],
 }

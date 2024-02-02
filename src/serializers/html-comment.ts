@@ -5,7 +5,4 @@ const test = (value: any): boolean =>
 
 const serialize = (): string => '';
 
-export = {
-  serialize,
-  test,
-};
+export { serialize, test };

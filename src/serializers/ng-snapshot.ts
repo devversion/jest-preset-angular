@@ -106,7 +106,4 @@ const print = (fixture: unknown, print: Printer, indent: Indent, opts: PluginOpt
 const test = (val: any): boolean =>
   !!val && typeof val === 'object' && Object.prototype.hasOwnProperty.call(val, 'componentRef');
 
-export = {
-  print,
-  test,
-};
+export { print, test };
